@@ -39,6 +39,7 @@ a {
 
 .container {
   width: 80%;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -176,4 +177,80 @@ a:focus {
   padding: 1.5em 0;
   width: 70%;
   margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .header {
+    width: 25em;
+    border-radius: 30px;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .circle {
+    height: 200px;
+    width: 200px;
+  }
+
+  .big {
+    font-size: 4rem;
+  }
+
+  .small {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    padding-top: 1em;
+  }
+
+  .details {
+    font-size: 1.3125rem;
+    padding-bottom: 2.5em;
+  }
+
+  .info__main {
+    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+  }
+
+  .section__title {
+    font-size: 1.8rem;
+    margin-left: 1em;
+  }
+
+  .section__test {
+    margin-right: 5em;
+  }
+
+  .btn {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
 }
